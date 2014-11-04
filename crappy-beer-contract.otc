@@ -1,0 +1,116 @@
+-----BEGIN SIGNED SMARTCONTRACT-----
+Hash: SAMY
+
+<smartContract
+ version="2.0"
+ serverID=""
+ activatorUserID=""
+ activatorAcctID=""
+ lastSenderUserID=""
+ lastSenderAcctID=""
+ lastRecipientUserID=""
+ lastRecipientAcctID=""
+ canceled="false"
+ cancelerUserID=""
+ transactionNum="0"
+ creationDate="1415062467"
+ validFrom="1415062467"
+ validTo="0"
+ nextProcessDate="0" >
+
+<scriptableContract
+ specifyAssetID="false"
+ specifyParties="false"
+ numParties="2"
+ numBylaws="1" >
+
+<party
+ name="party_plato"
+ ownerType="nym"
+ ownerID=""
+ openingTransNo="0"
+ signedCopyProvided="false"
+ authorizingAgent="agent_plato"
+ numAgents="1"
+ numAccounts="0" >
+
+<agent
+ name="agent_plato"
+ doesAgentRepresentHimself="true"
+ isAgentAnIndividual="true"
+ nymID=""
+ roleID=""
+ groupName="" />
+
+</party>
+
+<party
+ name="party_voodoo"
+ ownerType="nym"
+ ownerID=""
+ openingTransNo="0"
+ signedCopyProvided="false"
+ authorizingAgent="agent_voodoo"
+ numAgents="1"
+ numAccounts="0" >
+
+<agent
+ name="agent_voodoo"
+ doesAgentRepresentHimself="true"
+ isAgentAnIndividual="true"
+ nymID=""
+ roleID=""
+ groupName="" />
+
+</party>
+
+<bylaw
+ name="beerBuyer"
+ numVariables="1"
+ numClauses="1"
+ numHooks="1"
+ numCallbacks="1"
+ language="chai" >
+
+<variable
+ name="beerBuyer"
+ value="exists"
+ type="string"
+ access="important" >
+eNrjYlcqyEksyVcCAAolAnY=
+</variable>
+
+<clause
+ name="setBuyer">
+eNotjLEOgjAURePar7hh0gV2EgdFBhMHAjibUl9sB2vT94j6J36urTie3HOP+qxC
+dF7WxdD0x25sD2hOu/PQ1mCS/fymWGO0jjMyxBKCjvoOvcCUjbLYKDURxZ+P7aJc
+WFL5hqpKgf+NJO1BM9MVzuNpyYNeZGbJZg6ah5eojZTqC5jdNMQ=
+</clause>
+
+<hook
+ name="cron_activate"
+ clause="setBuyer" />
+
+<callback
+ name="callback_party_may_cancel_contract"
+ clause="setBuyer" />
+
+</bylaw>
+
+</scriptableContract>
+
+<accountList type="stash" count="0" >
+
+</accountList>
+
+</smartContract>
+
+-----BEGIN SMARTCONTRACT SIGNATURE-----
+Version: Open Transactions 0.93.0-1117-gfacffb8
+Comment: http://github.com/FellowTraveler/Open-Transactions/wiki
+Meta:    SDT9
+
+CoABMaueKHfB5Lmt60/tbg/W774x+NGSm5VKOKQ1ZhV351ggBsbIJo4Pu7dWMHMw
+coRolyymWbisb5+mUOm3imdwTRB0BZ6YC27Pp3aq4iWRFApNjVgwlWxDcA0h0E8I
+tOZymjmI8U03cHlciKYiPdl6k5eaPs8c+vnRJ0Uo8Zjw1AM=
+-----END SMARTCONTRACT SIGNATURE-----

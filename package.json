@@ -1,0 +1,27 @@
+{
+  "name": "jsonify-ot-contract",
+  "version": "0.1.0",
+  "description": "Extract the XML body of an OT contract and convert it to JSON",
+  "main": "jsonifyContract.js",
+  "dependencies": {
+    "xml2js": "^0.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/plato-cambrian/jsonify-ot-contract.git"
+  },
+  "keywords": [
+    "opentransactions",
+    "smartcontract"
+  ],
+  "author": "plato@centralservices.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plato-cambrian/jsonify-ot-contract/issues"
+  },
+  "homepage": "https://github.com/plato-cambrian/jsonify-ot-contract"
+}
